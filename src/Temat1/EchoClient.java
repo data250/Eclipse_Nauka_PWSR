@@ -41,5 +41,7 @@ public class EchoClient {
 			socket.close();
 		} catch (IOException e) {
 		}
+		in.close();
+		keyboard.close();
 	}
 }
