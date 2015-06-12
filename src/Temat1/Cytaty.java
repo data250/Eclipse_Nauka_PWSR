@@ -4,9 +4,9 @@ import java.util.Random;
 
 public class Cytaty {
 	
-	public int max;
 	private static int MAX = 3; // tak ma byæ 
 	private static String[] tablica = {"Kto rano wstaje...", "Test test i test", "Kot"};
+	public int max;
 	
 	
 	public Cytaty() {
@@ -19,16 +19,16 @@ public class Cytaty {
 		this.max = max;
 	}
 
+	public int getMax() {
+		return max;
+	}
+
 	public String losuj() {
 		
 		Random generator = new Random();
 		
 		int i = generator.nextInt(this.max);
 		return tablica[i];
-	}
-
-	public int getMax() {
-		return max;
 	}
 
 	public void setMax(int max) {
